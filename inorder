@@ -1,0 +1,8 @@
+ void inorder(TreeNode* root, vector<int>&t)
+{
+  			if(root==NULL) return;
+        if(root->left) inorder(root->left,t);
+        t.push_back(root->val);
+        if(root->right) inorder(root->right,t);
+    }
+    
