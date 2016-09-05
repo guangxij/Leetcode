@@ -24,7 +24,7 @@ private:
       for(auto n:graph[node]){
           if(onpath[n] || dfs_cycle(graph,n,onpath,visited)) return true;
       }
-      return onpath[node] = false;
+      return onpath[node] = false; //onpath[node]=false; return false;
     }
 };
 
